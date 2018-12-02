@@ -1,0 +1,56 @@
+//
+//  main.cpp
+//  UTS
+//
+//  Created by BAMBANG on 12/1/18.
+//  Copyright © 2018 BAMBANG. All rights reserved.
+//
+
+#include <iostream>
+#include <string.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    
+    
+    int i =0;
+    float rata2=0;
+    double nilai[i];
+    string jur[5]={"IPA","IPS","BAHASA INDONESIA","BAHASA INGGRIS","MATEMATIKA"};
+    char nama[0];
+    
+    //INPUT DATA SISWA
+    
+    cout<<"INPUT NAMA SISWA = ";
+    cin>>nama;
+    cout<<endl;
+    
+    for (i=0; i<5; i++){
+        cout<<"Masukan Nilai["<<jur[i]<<"] = ";
+        cin >>nilai[i];
+        cout<<endl;
+    }
+    
+    for (i=0; i<5; i++){
+    cout<<"NILAI ["<<jur[i]<<"] = "<<nilai[i]<<endl;
+    }
+    cout<<"NAMA SISWA = "<<nama<<endl;
+    
+    rata2 = (nilai[0]+nilai[1]+nilai[2]+nilai[3]+nilai[4])/5;
+    cout<<"NILAI RATA - RATA = "<<rata2<<endl;
+    
+    if(rata2<=65){
+        
+        cout<<"Tidak Lulus"<<endl;
+    }
+    
+    else {
+        
+        cout <<"LULUS"<<endl;
+    }
+    
+    return 0;
+}
